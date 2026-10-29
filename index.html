@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="es" data-theme="noche">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Milena Perez Benzo · Datos que cuentan historias</title>
+<meta name="description" content="Portfolio de Milena Perez Benzo: análisis de datos, reportes y automatizaciones que convierten información dispersa en historias claras para decidir.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+<script>
+  document.documentElement.classList.add("js");
+  try {
+    var t = localStorage.getItem("tema");
+    if (t === "noche" || t === "marfil") document.documentElement.dataset.theme = t;
+  } catch (e) {}
+</script>
+</head>
+<body>
+<div class="progreso" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="Milena Perez Benzo, ir al inicio">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <rect x="2" y="2" width="44" height="44" rx="15" style="fill:var(--accent)"/>
+        <path d="M11 33V16l7 10 7-10v17" fill="none" style="stroke:var(--accent-ink)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M29 33V16h4.5a5 5 0 0 1 0 10H29" fill="none" style="stroke:var(--accent-ink)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="38.5" cy="33" r="2.6" style="fill:var(--accent-2)"/>
+      </svg>
+      <span>Milena Perez Benzo</span>
+    </a>
+    <nav class="nav-links" aria-label="Secciones">
+      <a href="#historia">Historia</a>
+      <a href="#casos">Casos</a>
+      <a href="#metodo">Cómo trabajo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="temas" role="group" aria-label="Paleta de colores">
+      <button type="button" data-set="noche" aria-pressed="true" title="Noche"><span class="sr">Versión oscura</span></button>
+      <button type="button" data-set="marfil" aria-pressed="false" title="Marfil"><span class="sr">Versión clara</span></button>
+    </div>
+    <button class="btn-menu" type="button" aria-expanded="false" aria-controls="menu"><span>Menú</span><i aria-hidden="true"><b></b><b></b></i></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="wrap">
+    <ol>
+      <li><a href="#inicio"><small>01</small>Inicio</a></li>
+      <li><a href="#historia"><small>02</small>Mi historia</a></li>
+      <li><a href="#casos"><small>03</small>Casos</a></li>
+      <li><a href="#metodo"><small>04</small>Cómo trabajo</a></li>
+      <li><a href="#contacto"><small>05</small>Hablemos</a></li>
+    </ol>
+    <p class="menu-pie">Buenos Aires · Análisis de datos, reportes y automatizaciones</p>
+  </div>
+</div>
+
+<main>
+
+<section class="hero" id="inicio">
+  <div class="eco" aria-hidden="true">
+    <div>DATOS · HISTORIAS · DATOS · HISTORIAS · DATOS · HISTORIAS · DATOS · HISTORIAS ·</div>
+    <div>DECISIONES · DATOS · DECISIONES · DATOS · DECISIONES · DATOS · DECISIONES · DATOS ·</div>
+  </div>
+
+  <div class="flotantes" aria-hidden="true">
+    <div class="obj o1" data-prof="28"><svg viewBox="0 0 160 140">
+      <defs><linearGradient id="g-barra" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--clay-hi)"/><stop offset="1" style="stop-color:var(--accent)"/></linearGradient></defs>
+      <rect x="8" y="104" width="144" height="28" rx="14" style="fill:var(--clay-lo)"/>
+      <rect x="22" y="62" width="30" height="52" rx="12" fill="url(#g-barra)"/>
+      <rect x="65" y="30" width="30" height="84" rx="12" fill="url(#g-barra)"/>
+      <rect x="108" y="8" width="30" height="106" rx="12" style="fill:var(--accent-2)"/>
+    </svg></div>
+    <div class="obj o2" data-prof="18"><svg viewBox="0 0 120 120">
+      <circle cx="60" cy="60" r="44" fill="none" style="stroke:var(--clay-lo)" stroke-width="26"/>
+      <circle cx="60" cy="60" r="44" fill="none" style="stroke:var(--accent)" stroke-width="26" stroke-dasharray="200 277" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+      <circle cx="60" cy="60" r="44" fill="none" style="stroke:var(--accent-2)" stroke-width="26" stroke-dasharray="46 277" stroke-dashoffset="-214" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+    </svg></div>
+    <div class="obj o3" data-prof="36"><svg viewBox="0 0 110 110">
+      <circle cx="46" cy="46" r="32" style="fill:var(--clay-hi);stroke:var(--accent)" stroke-width="12"/>
+      <path d="M70 70l26 26" style="stroke:var(--accent)" stroke-width="16" stroke-linecap="round"/>
+      <path d="M32 50l9-10 9 6 10-14" fill="none" style="stroke:var(--accent-2)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg></div>
+    <div class="obj o4" data-prof="12"><svg viewBox="0 0 100 92">
+      <path d="M14 6h72a10 10 0 0 1 10 10v40a10 10 0 0 1-10 10H40L20 86V66h-6A10 10 0 0 1 4 56V16A10 10 0 0 1 14 6z" style="fill:var(--clay-hi)"/>
+      <path d="M50 18l5 11 12 1-9 8 3 12-11-6-11 6 3-12-9-8 12-1z" style="fill:var(--accent-2)"/>
+    </svg></div>
+  </div>
+
+  <div class="wrap">
+    <div class="hero-txt">
+      <span class="kicker"><i></i>Portfolio · Análisis de datos y automatización</span>
+      <h1 class="display">
+        <span class="linea"><span>Datos dispersos,</span></span>
+        <span class="linea"><span style="--dl:.12s"><em>historias claras.</em></span></span>
+      </h1>
+      <p class="bajada aparece" style="--dl:.3s">Soy <b>Milena Perez Benzo</b>. Integro fuentes que no se comunican entre sí, identifico lo relevante y lo presento para facilitar la toma de decisiones.</p>
+      <div class="acciones aparece" style="--dl:.45s">
+        <a class="btn lleno" href="#casos">Ver casos <span class="flecha" aria-hidden="true">→</span></a>
+        <a class="btn" href="https://www.linkedin.com/in/milena-jazmin-perez-benzo-93802a198" target="_blank" rel="noopener">LinkedIn <span class="flecha" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+  <a class="scroll-pista" href="#historia">Explorar</a>
+</section>
+
+<section class="historia bloque" id="historia">
+  <div class="wrap">
+    <p class="etiqueta aparece">Mi historia</p>
+    <h2 class="titulo display aparece">De la técnica en informática a <em>datos que guían decisiones.</em></h2>
+    <p class="intro aparece">Mi trabajo tiene un hilo conductor: transformar información dispersa en conocimiento claro para que otras personas puedan decidir.</p>
+
+    <div class="tiempo">
+      <div class="trazo" aria-hidden="true"></div>
+      <article class="hito aparece">
+        <span class="num">01</span>
+        <h3>La base técnica</h3>
+        <p>Me formé como Técnica en Informática en la secundaria. El software siempre fue mi interés y mi hobby: aprendí a construir sistemas por mi cuenta.</p>
+      </article>
+      <article class="hito aparece" style="--dl:.12s">
+        <span class="num">02</span>
+        <h3>Del cuaderno a los datos</h3>
+        <p>En el taller mecánico de mi familia llevé la gestión de los cuadernos a mano a una base vinculada, con un bot y una web para el celular.</p>
+      </article>
+      <article class="hito aparece" style="--dl:.24s">
+        <span class="num">03</span>
+        <h3>La profesionalización</h3>
+        <p>Desde julio de 2026 trabajo como analista en una empresa de e-commerce, donde desarrollé 6 reportes, tableros y herramientas que hoy usan otros equipos.</p>
+      </article>
+    </div>
+
+    <p class="cita-grande aparece">Estudio Comunicación Social en la UBA, en el área de investigación. Ahí entendí algo que guía mi trabajo: <mark>un volumen grande de datos no dice nada sin criterio para cuestionarlo y sin alguien que lo cuente bien.</mark></p>
+
+    <div class="numeros">
+      <div class="cifra aparece"><strong><span data-cuenta="6">6</span></strong><span>reportes, tableros y herramientas en uso por otros equipos desde julio de 2026</span></div>
+      <div class="cifra aparece" style="--dl:.08s"><strong>10 → <span data-cuenta="3">3</span> min</strong><span>por búsqueda, con 7 fuentes integradas en un solo panel</span></div>
+      <div class="cifra aparece" style="--dl:.16s"><strong><span data-cuenta="95">95</span> %</strong><span>del histórico del taller vinculado a su cliente</span></div>
+      <div class="cifra aparece" style="--dl:.24s"><strong>+<span data-cuenta="60">60</span></strong><span>versiones del gestor de tareas, iteradas con sus usuarios</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloque" id="casos">
+  <div class="wrap">
+    <p class="etiqueta aparece">Casos</p>
+    <h2 class="titulo display aparece">Lo que construí, <em>y lo que encontré.</em></h2>
+    <p class="intro aparece">Seleccioná un caso para ver el detalle: la pregunta, los datos, el hallazgo y la decisión que permitió.</p>
+
+    <div class="destacados">
+      <article class="destacado aparece">
+        <div class="dest-txt">
+          <span class="tipo">Caso destacado · Análisis</span>
+          <h3>La alerta que encontró un error de despacho</h3>
+          <p class="dest-dato"><strong>Devolución total</strong><span>detectada de una semana a otra, con la causa identificada y corregida</span></p>
+          <button class="btn lleno" type="button" data-caso="c-alerta">Ver el caso <span class="flecha" aria-hidden="true">→</span></button>
+        </div>
+        <div class="dest-img"><img src="img/analisis-1-alerta.png" width="1280" height="640" loading="lazy" alt="Maqueta del mail de la alerta semanal, con un producto marcado en rojo por devoluciones."></div>
+      </article>
+      <article class="destacado invertido aparece">
+        <div class="dest-txt">
+          <span class="tipo">Caso destacado · Herramienta interna</span>
+          <h3>Gestor de tareas: todo el trabajo del equipo en un panel</h3>
+          <p class="dest-dato"><strong>10 → 3 min</strong><span>por búsqueda, con 7 fuentes integradas</span></p>
+          <button class="btn lleno" type="button" data-caso="c-gestor">Ver el caso <span class="flecha" aria-hidden="true">→</span></button>
+        </div>
+        <div class="dest-img"><img src="img/gestor-1-mis-tareas.png" width="1280" height="800" loading="lazy" alt="Maqueta del panel del gestor de tareas con tarjetas por categoría."></div>
+      </article>
+    </div>
+
+    <h3 class="indice-tit aparece">Más casos</h3>
+    <ol class="indice">
+      <li class="aparece"><button class="fila" type="button" data-caso="c-tablero" data-img="img/analisis-3-tablero.png"><span class="f-num">03</span><span class="f-tit">Tablero trimestral del equipo<small>Carga, tiempos y colaboraciones, trimestre contra trimestre</small></span><span class="f-tag">Análisis</span><span class="f-ir" aria-hidden="true">↗</span></button></li>
+      <li class="aparece"><button class="fila" type="button" data-caso="c-calidad" data-img="img/analisis-2-calidad.png"><span class="f-num">04</span><span class="f-tit">Reporte semanal de calidad con IA<small>Indicadores y un resumen cualitativo de las observaciones</small></span><span class="f-tag">Reporte</span><span class="f-ir" aria-hidden="true">↗</span></button></li>
+      <li class="aparece"><button class="fila" type="button" data-caso="c-auditoria" data-img="img/auditoria-1-resumen.png"><span class="f-num">05</span><span class="f-tit">Auditoría de manuales web<small>Control automático de la versión publicada contra la aprobada</small></span><span class="f-tag">Automatización</span><span class="f-ir" aria-hidden="true">↗</span></button></li>
+      <li class="aparece"><button class="fila" type="button" data-caso="c-verificacion" data-img="img/verificacion-1-flujo.png"><span class="f-num">06</span><span class="f-tit">Verificación de publicaciones con IA<small>n8n y la API de Claude comprueban cada cambio pedido</small></span><span class="f-tag">IA aplicada</span><span class="f-ir" aria-hidden="true">↗</span></button></li>
+      <li class="aparece"><button class="fila" type="button" data-caso="c-lumi" data-img="img/lumi-1-papelitos.png"><span class="f-num">07</span><span class="f-tit">Lumi: la gestión de un taller<small>Un bot de Telegram como bandeja de entrada y datos vinculados</small></span><span class="f-tag">Sistema PyME</span><span class="f-ir" aria-hidden="true">↗</span></button></li>
+      <li class="aparece"><button class="fila" type="button" data-caso="c-cerebro" data-img="img/cerebro-1-obsidian.png"><span class="f-num">08</span><span class="f-tit">Segundo cerebro digital<small>Mi sistema personal más completo, de punta a punta</small></span><span class="f-tag">Personal</span><span class="f-ir" aria-hidden="true">↗</span></button></li>
+      <li class="aparece"><button class="fila proxima" type="button" data-caso="c-powerbi"><span class="f-num">09</span><span class="f-tit">Tablero de gestión en Power BI<small>En construcción · noviembre de 2026</small></span><span class="f-tag">Próximamente</span><span class="f-ir" aria-hidden="true">↗</span></button></li>
+    </ol>
+  </div>
+  <div class="vista-flotante" aria-hidden="true"><img alt="" width="1280" height="800"></div>
+</section>
+
+<section class="hallazgo bloque" id="hallazgo" aria-labelledby="t-hallazgo">
+  <div class="wrap">
+    <p class="etiqueta aparece">Un hallazgo, paso a paso</p>
+    <h2 class="titulo display aparece" id="t-hallazgo">Cuando un número <em>se dispara.</em></h2>
+    <p class="intro aparece">Así funciona la alerta de los lunes. Esta es una recreación con datos inventados del caso real.</p>
+
+    <div class="escena">
+      <div class="tabla-viva aparece" id="tabla-viva">
+        <table>
+          <caption class="sr">Top de ventas con devoluciones, fallas y puntaje de clientes (datos inventados)</caption>
+          <thead><tr><th>Producto</th><th class="n">Vendidas</th><th>Devoluciones</th><th class="n">Puntaje</th><th>Estado</th></tr></thead>
+          <tbody>
+            <tr><td>Freidora de aire</td><td class="n">540</td><td><span class="barra" data-w="2"></span><span class="dev">2 %</span></td><td class="n">4,7 ★</td><td><span class="sello">OK</span></td></tr>
+            <tr><td>Aspiradora robot</td><td class="n">488</td><td><span class="barra" data-w="3"></span><span class="dev">3 %</span></td><td class="n">4,5 ★</td><td><span class="sello">OK</span></td></tr>
+            <tr class="critico"><td><b>Producto premium</b></td><td class="n">312</td><td><span class="barra" data-w="96"></span><span class="dev">96 %</span></td><td class="n">1,8 ★</td><td><span class="sello">Revisar ya</span></td></tr>
+            <tr><td>Ventilador de pie</td><td class="n">265</td><td><span class="barra" data-w="7"></span><span class="dev">7 %</span></td><td class="n">3,6 ★</td><td><span class="sello">Mirar</span></td></tr>
+            <tr><td>Auriculares</td><td class="n">231</td><td><span class="barra" data-w="4"></span><span class="dev">4 %</span></td><td class="n">3,9 ★</td><td><span class="sello">OK</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <ol class="relato-pasos" id="relato">
+          <li><b>La pregunta</b>¿Cuáles de los productos que más venden tienen problemas?</li>
+          <li><b>El cruce</b>Ventas, devoluciones, fallas de servicio técnico y opiniones, con el criterio de falla acordado.</li>
+          <li><b>La alarma</b>Un producto premium pasó de una semana a otra a devolverse entero.</li>
+          <li><b>La decisión</b>Se investigó y apareció un error de despacho: se entregaba otro modelo, más barato. Se corrigió.</li>
+        </ol>
+        <button class="btn btn-claro" type="button" id="repetir">Reproducir de nuevo <span class="flecha" aria-hidden="true">↻</span></button>
+        <p class="nota" style="margin-top:18px">Hoy la alerta se usa para revisar productos de forma preventiva.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloque" id="metodo">
+  <div class="wrap">
+    <p class="etiqueta aparece">Cómo trabajo con datos</p>
+    <h2 class="titulo display aparece">Cinco pasos, <em>siempre los mismos.</em></h2>
+    <div class="paneles aparece" id="paneles">
+      <button class="panel" type="button" aria-expanded="true"><span class="p-num">01</span><span class="p-tit">La pregunta</span><span class="p-cuerpo"><h3>Primero, la pregunta.</h3><p>Antes de abrir una planilla entiendo quién va a leer el resultado y qué necesita decidir.</p></span></button>
+      <button class="panel" type="button" aria-expanded="false"><span class="p-num">02</span><span class="p-tit">El cruce</span><span class="p-cuerpo"><h3>Cruzo las fuentes.</h3><p>La respuesta casi nunca está en una sola tabla: está en el cruce de varias.</p></span></button>
+      <button class="panel" type="button" aria-expanded="false"><span class="p-num">03</span><span class="p-tit">El criterio</span><span class="p-cuerpo"><h3>Acuerdo el criterio con quien decide.</h3><p>Qué cuenta como falla, qué es grave, qué se compara con qué. Sin criterio acordado, el número no sirve.</p></span></button>
+      <button class="panel" type="button" aria-expanded="false"><span class="p-num">04</span><span class="p-tit">El relato</span><span class="p-cuerpo"><h3>Lo cuento según quién lo lee.</h3><p>Un tester, una gerenta y un equipo de categorías necesitan ver cosas distintas. Arriba, el hallazgo; el detalle, a un clic.</p></span></button>
+      <button class="panel" type="button" aria-expanded="false"><span class="p-num">05</span><span class="p-tit">La automatización</span><span class="p-cuerpo"><h3>Lo automatizo.</h3><p>Un reporte que se hace una vez es una foto. Uno que se genera solo cada semana es seguimiento continuo, con menos trabajo manual y menor carga cognitiva.</p></span></button>
+    </div>
+  </div>
+</section>
+
+<section class="bloque historia" id="persona">
+  <div class="wrap">
+    <p class="etiqueta aparece">Cómo soy para trabajar</p>
+    <h2 class="titulo display aparece">Habilidades que potencian <em>lo técnico.</em></h2>
+    <div class="rasgos">
+      <article class="rasgo aparece"><div class="ico" aria-hidden="true">✦</div><h3>Comunicación adaptada a cada perfil</h3><p>Dos años como docente de tecnología para adultos mayores de 50 me enseñaron que cada persona se conecta con un mensaje de forma distinta. Adapto el lenguaje y el formato a quien lo recibe.</p></article>
+      <article class="rasgo aparece" style="--dl:.08s"><div class="ico" aria-hidden="true">⚡</div><h3>Optimización de procesos</h3><p>Identifico los pasos que generan demoras o carga innecesaria y los automatizo o los elimino, para reducir el tiempo operativo y la carga cognitiva del equipo.</p></article>
+      <article class="rasgo aparece" style="--dl:.16s"><div class="ico" aria-hidden="true">◎</div><h3>Responsabilidad y criterio</h3><p>Valido cada entrega. Uso la IA como herramienta para potenciar mi trabajo; el criterio, la validación y la responsabilidad del resultado son míos.</p></article>
+      <article class="rasgo aparece" style="--dl:.24s"><div class="ico" aria-hidden="true">❋</div><h3>Trabajo en equipo y formación continua</h3><p>Desarrollo mis herramientas junto a quienes las usan y las ajusto con su feedback. Me formo de manera constante: hoy curso Power BI con Microsoft e inglés profesional.</p></article>
+    </div>
+  </div>
+  <div class="cinta" aria-label="Herramientas que uso">
+    <div>
+      <span>SQL · BigQuery</span><span>Python</span><span>Power BI (en curso)</span><span>Google Sheets</span><span>Excel</span><span>Apps Script</span><span>n8n</span><span>API de Claude</span><span>Gemini</span>
+      <span aria-hidden="true">SQL · BigQuery</span><span aria-hidden="true">Python</span><span aria-hidden="true">Power BI (en curso)</span><span aria-hidden="true">Google Sheets</span><span aria-hidden="true">Excel</span><span aria-hidden="true">Apps Script</span><span aria-hidden="true">n8n</span><span aria-hidden="true">API de Claude</span><span aria-hidden="true">Gemini</span>
+    </div>
+  </div>
+</section>
+
+<section class="bloque contacto" id="contacto">
+  <div class="wrap">
+    <p class="etiqueta aparece">Contacto</p>
+    <h2 class="titulo display aparece">¿Hablamos?</h2>
+    <p class="intro aparece" style="margin-inline:auto">Comunicación Social (UBA, área de investigación) · AI Fundamentals de Google · cursando Power BI con Microsoft e inglés profesional.</p>
+    <a class="btn lleno aparece" href="https://www.linkedin.com/in/milena-jazmin-perez-benzo-93802a198" target="_blank" rel="noopener">Escribime por LinkedIn <span class="flecha" aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Los proyectos hechos para empresas se muestran sin datos internos. Las capturas y la tabla animada son maquetas con datos inventados.</p>
+  </div>
+</footer>
+
+<!-- ================= Popups de los casos ================= -->
+
+<dialog class="caso" id="c-alerta" aria-labelledby="h-alerta">
+  <div class="d-cab"><span class="tipo">Análisis · Empresa de e-commerce · desde oct 2026</span><button class="d-btn ant" type="button" aria-label="Caso anterior">←</button><button class="d-btn sig" type="button" aria-label="Caso siguiente">→</button><button class="d-btn cerrar" type="button" aria-label="Cerrar">✕</button></div>
+  <div class="d-cuerpo">
+    <h2 id="h-alerta">Alerta semanal de ventas y fallas</h2>
+    <p class="bajada">Cada lunes cruza el ranking de ventas con las devoluciones, las fallas y lo que dicen los clientes, y avisa qué producto mirar primero.</p>
+    <div class="d-grilla">
+      <div><h4>La pregunta</h4><p>¿Cuáles de los productos que más venden tienen problemas, y cuáles conviene revisar antes de que se multipliquen?</p></div>
+      <div><h4>Los datos</h4><p>Ranking de ventas, tasa de devoluciones, tasa de fallas de servicio técnico con sus comentarios, y puntajes y opiniones de clientes en el marketplace.</p></div>
+    </div>
+    <ol class="flujo"><li>Ventas, devoluciones, servicio técnico y opiniones</li><li>Cruce en BigQuery</li><li>Criterio de falla acordado</li><li>Orden por ventas</li><li>Mail del lunes</li></ol>
+    <div class="d-destacado">
+      <h4>Qué encontró</h4>
+      <p>Un producto premium del top de ventas pasó de una semana a otra a que se devolvieran todas las unidades. Al investigar apareció la causa: un error en la preparación de pedidos hacía que se entregara otro modelo, más barato y distinto al publicado.</p>
+      <p>También marcó publicaciones con errores graves en las especificaciones, que se pausaron y se corrigieron.</p>
+    </div>
+    <h4>Qué decisión permitió</h4>
+    <p>Encontrar y corregir el error de despacho a partir de un número que se disparó. Hoy la alerta funciona como disparador para revisar de forma preventiva los productos con más casos.</p>
+    <figure><img src="img/analisis-1-alerta.png" width="1280" height="640" loading="lazy" alt="Mail de la alerta semanal con una tabla ordenada por ventas; un producto aparece en rojo con 96 % de devoluciones y el comentario 'Llegó otro modelo'."><figcaption>Maqueta con datos inventados.</figcaption></figure>
+    <ul class="chips"><li>BigQuery</li><li>SQL</li><li>Apps Script</li><li>Google Sheets</li></ul>
+  </div>
+</dialog>
+
+<dialog class="caso" id="c-tablero" aria-labelledby="h-tablero">
+  <div class="d-cab"><span class="tipo">Tablero · Empresa de e-commerce · terminado en oct 2026</span><button class="d-btn ant" type="button" aria-label="Caso anterior">←</button><button class="d-btn sig" type="button" aria-label="Caso siguiente">→</button><button class="d-btn cerrar" type="button" aria-label="Cerrar">✕</button></div>
+  <div class="d-cuerpo">
+    <h2 id="h-tablero">Tablero trimestral del equipo</h2>
+    <p class="bajada">Muestra cómo rinde un equipo trimestre contra trimestre, a partir de tareas repartidas en planillas que no estaban conectadas.</p>
+    <div class="d-grilla">
+      <div><h4>La pregunta</h4><p>¿Cómo viene el equipo? ¿Quién tiene más carga, dónde se traba el trabajo y qué cambió contra el trimestre anterior?</p></div>
+      <div><h4>Los datos</h4><p>Las tareas del equipo, dispersas en varias planillas. Las uní en una base y armé un tablero web donde cada uno elige qué comparar y lo exporta a PDF para mandarlo por mail.</p></div>
+    </div>
+    <div class="d-destacado">
+      <h4>Qué encontró</h4>
+      <ul>
+        <li>Un desbalance de tiempos y de carga entre colaboradores.</li>
+        <li>Consultas duplicadas: la misma persona recibía la misma pregunta varias veces.</li>
+        <li>Áreas flojas que hay que tener en cuenta.</li>
+        <li>Colaboraciones entre compañeros que antes no se registraban en ningún lado.</li>
+      </ul>
+    </div>
+    <h4>Qué decisión permitió</h4>
+    <p>La supervisión y la coordinación lo usan para seguir al equipo, y la gerencia lo consulta cuando necesita un número puntual. Además, contar las colaboraciones hizo visible un trabajo que antes no se veía y motiva el compañerismo.</p>
+    <figure><img src="img/analisis-3-tablero.png" width="1280" height="580" loading="lazy" alt="Tablero web que compara dos trimestres: casos cerrados, tiempo medio, colaboraciones y consultas duplicadas, con una tabla por persona."><figcaption>Maqueta con datos y personas inventados.</figcaption></figure>
+    <ul class="chips"><li>Google Sheets</li><li>Apps Script (web)</li><li>Exportación a PDF</li></ul>
+  </div>
+</dialog>
+
+<dialog class="caso" id="c-calidad" aria-labelledby="h-calidad">
+  <div class="d-cab"><span class="tipo">Reporte · Empresa de e-commerce · desde oct 2026</span><button class="d-btn ant" type="button" aria-label="Caso anterior">←</button><button class="d-btn sig" type="button" aria-label="Caso siguiente">→</button><button class="d-btn cerrar" type="button" aria-label="Cerrar">✕</button></div>
+  <div class="d-cuerpo">
+    <h2 id="h-calidad">Reporte semanal de calidad con IA</h2>
+    <p class="bajada">Cada viernes junta los números de las revisiones de calidad con lo que observaron los testers, resumido por IA.</p>
+    <div class="d-grilla">
+      <div><h4>Antes</h4><p>No existía: nadie tenía una visión de conjunto de la calidad ni un seguimiento semana a semana.</p></div>
+      <div><h4>Ahora</h4><p>Productos revisados; aprobados, condicionales y desaprobados; fallas en la web, en manuales, graves y por proveedor; y un análisis cualitativo de las observaciones.</p></div>
+    </div>
+    <ol class="flujo"><li>Revisiones de QA</li><li>Indicadores</li><li>Resumen con IA</li><li>Mail del viernes</li></ol>
+    <h4>Por qué números y palabras</h4>
+    <p>Un porcentaje dice cuánto; las observaciones dicen por qué. La IA resume lo que escribieron los testers y yo defino qué se mide y cómo se presenta. Lo reciben la supervisión, la coordinación, la gerencia y los equipos de categorías.</p>
+    <p class="d-resultado">Por primera vez hay visibilidad y seguimiento continuo de la calidad, sin que nadie arme el reporte a mano.</p>
+    <figure><img src="img/analisis-2-calidad.png" width="1280" height="660" loading="lazy" alt="Mail del reporte semanal de calidad con indicadores, barras por tipo de falla y por proveedor, y un resumen cualitativo hecho con IA."><figcaption>Maqueta con datos inventados.</figcaption></figure>
+    <ul class="chips"><li>Google Sheets</li><li>n8n</li><li>API de Claude</li></ul>
+  </div>
+</dialog>
+
+<dialog class="caso" id="c-lumi" aria-labelledby="h-lumi">
+  <div class="d-cab"><span class="tipo">Sistema · Taller mecánico de mi familia</span><button class="d-btn ant" type="button" aria-label="Caso anterior">←</button><button class="d-btn sig" type="button" aria-label="Caso siguiente">→</button><button class="d-btn cerrar" type="button" aria-label="Cerrar">✕</button></div>
+  <div class="d-cuerpo">
+    <h2 id="h-lumi">Lumi: el taller, de cuadernos a datos</h2>
+    <p class="bajada">El equipo le manda todo a un bot de Telegram y queda ordenado en una planilla, con una web simple para el celular.</p>
+    <h4>El problema</h4>
+    <p>Los trabajos y los turnos se acordaban por WhatsApp y las notas iban a papelitos y cuadernos. Un intento anterior en Notion se abandonó porque cargar era lento.</p>
+    <h4>Qué construí</h4>
+    <ol class="flujo"><li>Audio, foto o nota</li><li>Bot de Telegram</li><li>Bandeja en la planilla</li><li>Transcripción automática</li><li>Web en el celular</li></ol>
+    <ul>
+      <li>Antes de programar, cinco entrevistas con la usuaria principal. La regla que salió: anotar tiene que ser más fácil que un papelito.</li>
+      <li>Migré el histórico y vinculé cada trabajo con su cliente. Un script en Python lee el QR de las facturas y propone a qué trabajo va cada una; lo dudoso lo confirma una persona.</li>
+      <li>Web para el celular: pendientes, notas, balance y mensajes a clientes ya armados, que siempre envía una persona.</li>
+    </ul>
+    <p class="d-resultado">El 95 % de los trabajos históricos quedó vinculado a su cliente (278 de 293) y el 92 % de las facturas, a su trabajo (98 de 106). Lo usamos la socia administrativa y yo.</p>
+    <div class="fotos-tel">
+      <img src="img/lumi-3-bot.png" width="700" height="916" loading="lazy" alt="Chat con el bot de Lumi: el equipo manda un audio, una foto y un texto.">
+      <img src="img/lumi-1-papelitos.png" width="700" height="916" loading="lazy" alt="Pantalla de Lumi con los pendientes de hoy y de la semana.">
+      <img src="img/lumi-2-balance.png" width="700" height="916" loading="lazy" alt="Balance del mes por cuenta en Lumi.">
+    </div>
+    <ul class="chips"><li>Telegram</li><li>Apps Script</li><li>Google Sheets</li><li>Python</li></ul>
+  </div>
+</dialog>
+
+<dialog class="caso" id="c-gestor" aria-labelledby="h-gestor">
+  <div class="d-cab"><span class="tipo">Herramienta interna · Empresa de e-commerce · desde jul 2026</span><button class="d-btn ant" type="button" aria-label="Caso anterior">←</button><button class="d-btn sig" type="button" aria-label="Caso siguiente">→</button><button class="d-btn cerrar" type="button" aria-label="Cerrar">✕</button></div>
+  <div class="d-cuerpo">
+    <h2 id="h-gestor">Gestor de tareas del equipo técnico</h2>
+    <p class="bajada">Un panel lateral de Chrome que concentra todo el trabajo del equipo: las tareas, la información de cada producto, los mails, el tiempo y las notas. Diseñado al 100 % a medida de sus necesidades y de las fricciones de su día a día.</p>
+    <h4>El problema</h4>
+    <p>La información de cada producto estaba repartida en 7 fuentes armadas por otros equipos, que no se podían modificar. Cada búsqueda llevaba unos 10 minutos, y para saber en qué estaba cada tarea había que preguntar.</p>
+    <div class="d-grilla">
+      <div>
+        <h4>Información a un clic</h4>
+        <ul>
+          <li>Desde cada tarea, el acceso directo a tickets, reportes, controles de calidad, muestras, datos del proveedor y la publicación web.</li>
+          <li>Vinculación automática de los mails con su tarea.</li>
+          <li>Un recorte web: cualquier página se guarda en una tarea existente o crea una nueva.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Gestión en lenguaje natural</h4>
+        <ul>
+          <li>Tareas, estados, comentarios, subtareas, colaboraciones y exclusiones, escritos como se habla y con menciones @ a cada persona.</li>
+          <li>Registro de tiempo por tarea.</li>
+          <li>Notas siempre a mano, al pie del panel.</li>
+          <li>Notificaciones emergentes de Chrome, configurables por cada persona.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-destacado">
+      <h4>Visibilidad para la supervisión</h4>
+      <p>La supervisión ve los pendientes activos y la carga de cada persona. Ya no hace falta preguntar en qué va cada tarea.</p>
+    </div>
+    <h4>Cómo lo construí</h4>
+    <p>Encima de sistemas que no se podían cambiar: cada fuente se importa por separado y, si una falla, el resto sigue funcionando y el panel avisa. Lo fui ajustando con el feedback del equipo en más de 60 versiones.</p>
+    <p class="d-resultado">Cada búsqueda pasó de 10 minutos a 3. Lo usa a diario un equipo de 4 personas.</p>
+    <figure><img src="img/gestor-1-mis-tareas.png" width="1280" height="800" loading="lazy" alt="Panel del gestor con tarjetas por categoría y una tarea nueva escrita en lenguaje natural."><figcaption>Las tareas se escriben como se habla. Maqueta con datos inventados.</figcaption></figure>
+    <figure><img src="img/gestor-2-vinculos.png" width="1280" height="800" loading="lazy" alt="Tarjeta del gestor con el menú de vínculos que junta ticket, controles, muestras, mail y datos del producto."><figcaption>Todo lo de un producto, a un clic.</figcaption></figure>
+    <figure><img src="img/gestor-3-equipo.png" width="1280" height="800" loading="lazy" alt="Tablero del equipo con una columna por persona y sus tareas pendientes."><figcaption>La carga de cada persona, a la vista de la supervisión.</figcaption></figure>
+    <ul class="chips"><li>Extensión de Chrome</li><li>JavaScript</li><li>Apps Script</li><li>Google Sheets</li><li>BigQuery</li><li>Gmail y Calendar</li></ul>
+  </div>
+</dialog>
+
+<dialog class="caso" id="c-auditoria" aria-labelledby="h-auditoria">
+  <div class="d-cab"><span class="tipo">Automatización · Empresa de e-commerce</span><button class="d-btn ant" type="button" aria-label="Caso anterior">←</button><button class="d-btn sig" type="button" aria-label="Caso siguiente">→</button><button class="d-btn cerrar" type="button" aria-label="Cerrar">✕</button></div>
+  <div class="d-cuerpo">
+    <h2 id="h-auditoria">Auditoría de manuales web</h2>
+    <p class="bajada">Controla sola si los manuales publicados en la web son la última versión aprobada, y deja para revisar solo lo necesario.</p>
+    <ol class="flujo"><li>Manual publicado</li><li>Huella del archivo</li><li>Comparación con Drive</li><li>OK · NO OK · Revisar</li></ol>
+    <ul>
+      <li>Cruza los manuales publicados con los de Drive; si no son idénticos, compara página por página y clasifica cada diferencia por gravedad.</li>
+      <li>Regla acordada con la usuaria: nunca un falso OK. Lo dudoso va a revisión humana.</li>
+      <li>Corre sola con un disparador programado.</li>
+    </ul>
+    <p class="d-resultado">La usan dos equipos, entre ellos el de catálogo, responsable de los cambios en la web.</p>
+    <figure><img src="img/auditoria-1-resumen.png" width="1280" height="800" loading="lazy" alt="Panel de la auditoría con el porcentaje de manuales que coinciden y los que hay que corregir."><figcaption>Maqueta con datos inventados.</figcaption></figure>
+    <ul class="chips"><li>BigQuery</li><li>Python</li><li>Apps Script</li><li>Google Drive</li></ul>
+  </div>
+</dialog>
+
+<dialog class="caso" id="c-verificacion" aria-labelledby="h-verificacion">
+  <div class="d-cab"><span class="tipo">IA aplicada · Empresa de e-commerce</span><button class="d-btn ant" type="button" aria-label="Caso anterior">←</button><button class="d-btn sig" type="button" aria-label="Caso siguiente">→</button><button class="d-btn cerrar" type="button" aria-label="Cerrar">✕</button></div>
+  <div class="d-cuerpo">
+    <h2 id="h-verificacion">Verificación de publicaciones con IA</h2>
+    <p class="bajada">Un flujo de n8n que usa la API de Claude para comprobar si los cambios pedidos en una publicación quedaron hechos.</p>
+    <ol class="flujo"><li>Planilla de pedidos</li><li>Página publicada</li><li>Texto limpio</li><li>Claude verifica</li><li>Planilla de resultados</li></ol>
+    <ul>
+      <li>Descarta lo ya revisado y se queda solo con el texto visible: menos costo y mejor respuesta.</li>
+      <li>Claude responde con un formato fijo que el flujo interpreta y carga solo.</li>
+      <li>El flujo no cambia nada en la web por su cuenta: el veredicto queda para el equipo.</li>
+    </ul>
+    <figure><img src="img/verificacion-1-flujo.png" width="1280" height="800" loading="lazy" alt="Flujo en n8n que lee pedidos, baja cada publicación, la limpia, la verifica con Claude y carga el veredicto."><figcaption>Maqueta con datos inventados.</figcaption></figure>
+    <ul class="chips"><li>n8n</li><li>API de Claude</li><li>Google Sheets</li></ul>
+  </div>
+</dialog>
+
+<dialog class="caso" id="c-cerebro" aria-labelledby="h-cerebro">
+  <div class="d-cab"><span class="tipo">Proyecto personal</span><button class="d-btn ant" type="button" aria-label="Caso anterior">←</button><button class="d-btn sig" type="button" aria-label="Caso siguiente">→</button><button class="d-btn cerrar" type="button" aria-label="Cerrar">✕</button></div>
+  <div class="d-cuerpo">
+    <h2 id="h-cerebro">Segundo cerebro digital</h2>
+    <p class="bajada">Mi sistema personal más completo: un bot centraliza notas, fotos y audios, y todo queda ordenado y vinculado automáticamente.</p>
+    <ul>
+      <li>Primera versión en Notion: bot como bandeja de entrada y secciones que se vinculan solas.</li>
+      <li>Hoy migrando a Obsidian, sincronizado entre PC y celular, con IA local para que las notas no salgan de mi computadora.</li>
+    </ul>
+    <p class="d-resultado">De acá salió la idea del bot como bandeja de entrada que después usé en Lumi.</p>
+    <figure><img src="img/cerebro-1-obsidian.png" width="1280" height="800" loading="lazy" alt="Bóveda de Obsidian con carpetas por área y notas vinculadas."><figcaption>Captura con contenido de ejemplo.</figcaption></figure>
+    <ul class="chips"><li>Notion</li><li>Obsidian</li><li>Telegram</li><li>n8n</li><li>IA local</li></ul>
+  </div>
+</dialog>
+
+<dialog class="caso" id="c-powerbi" aria-labelledby="h-powerbi">
+  <div class="d-cab"><span class="tipo">En construcción · noviembre de 2026</span><button class="d-btn ant" type="button" aria-label="Caso anterior">←</button><button class="d-btn sig" type="button" aria-label="Caso siguiente">→</button><button class="d-btn cerrar" type="button" aria-label="Cerrar">✕</button></div>
+  <div class="d-cuerpo">
+    <h2 id="h-powerbi">Tablero de gestión de un taller en Power BI</h2>
+    <p class="bajada">El proceso completo de análisis, con datos inventados que copian la estructura real del taller.</p>
+    <p>Trabajos, clientes, gastos y facturas: limpieza en Power Query, modelo de datos, indicadores en DAX y una página que cuente qué muestra el tablero y qué decisiones habilita. Lo estoy armando mientras curso <em>Análisis y visualización de datos con Power BI</em>, de Microsoft.</p>
+    <p class="nota">Pronto, acá.</p>
+  </div>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>
