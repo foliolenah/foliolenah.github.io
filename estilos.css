@@ -72,6 +72,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .nav-links a { text-decoration: none; font-size: 15px; font-weight: 600; padding: 8px 12px; border-radius: 999px; position: relative; }
 .nav-links a::after { content: ""; position: absolute; left: 12px; right: 12px; bottom: 4px; height: 2px; background: var(--accent); transform: scaleX(0); transform-origin: right; transition: transform .35s ease; }
 .nav-links a:hover::after { transform: scaleX(1); transform-origin: left; }
+.idioma { text-decoration: none; font-size: 13px; font-weight: 800; letter-spacing: .5px; padding: 6px 11px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); transition: border-color .25s; }
+.idioma:hover { border-color: var(--accent); }
 .temas { display: flex; gap: 6px; padding: 5px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); }
 .temas button { width: 22px; height: 22px; border-radius: 50%; border: 2px solid transparent; padding: 0; transition: transform .25s; }
 .temas button:hover { transform: scale(1.15); }
@@ -358,7 +360,7 @@ dialog.caso::backdrop { background: color-mix(in srgb, var(--ink) 55%, transpare
 /* Navegación en pantallas chicas: queda el logo, las paletas y el botón de menú */
 @media (max-width: 900px) {
   .nav-links { display: none; }
-  .temas { margin-left: auto; }
+  .idioma { margin-left: auto; }
 }
 @media (max-width: 480px) {
   .logo span { display: none; }

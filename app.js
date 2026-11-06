@@ -21,7 +21,8 @@
   enlacesMenu.forEach((a) => a.setAttribute("tabindex", "-1"));
   const abrirMenu = (abrir) => {
     btnMenu.setAttribute("aria-expanded", String(abrir));
-    btnMenu.querySelector("span").textContent = abrir ? "Cerrar" : "Menú";
+    const enIngles = raiz.lang === "en";
+    btnMenu.querySelector("span").textContent = abrir ? (enIngles ? "Close" : "Cerrar") : (enIngles ? "Menu" : "Menú");
     menu.classList.toggle("abierto", abrir);
     menu.setAttribute("aria-hidden", String(!abrir));
     enlacesMenu.forEach((a) => a.setAttribute("tabindex", abrir ? "0" : "-1"));

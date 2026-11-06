@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en" data-theme="noche">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Milena Perez Benzo · Data that tells stories</title>
+<meta name="description" content="Portfolio of Milena Perez Benzo: data analysis, reporting and automation that turn scattered information into clear stories for decision-making.">
+<link rel="alternate" hreflang="es" href="https://foliolenah.github.io/">
+<link rel="alternate" hreflang="en" href="https://foliolenah.github.io/en/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../estilos.css">
+<script>
+  document.documentElement.classList.add("js");
+  try {
+    var t = localStorage.getItem("tema");
+    if (t === "noche" || t === "marfil") document.documentElement.dataset.theme = t;
+  } catch (e) {}
+</script>
+</head>
+<body>
+<div class="progreso" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="Milena Perez Benzo, back to top">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <rect x="2" y="2" width="44" height="44" rx="15" style="fill:var(--accent)"/>
+        <path d="M11 33V16l7 10 7-10v17" fill="none" style="stroke:var(--accent-ink)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M29 33V16h4.5a5 5 0 0 1 0 10H29" fill="none" style="stroke:var(--accent-ink)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="38.5" cy="33" r="2.6" style="fill:var(--accent-2)"/>
+      </svg>
+      <span>Milena Perez Benzo</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#historia">Story</a>
+      <a href="#casos">Projects</a>
+      <a href="#metodo">How I work</a>
+      <a href="#contacto">Contact</a>
+    </nav>
+    <a class="idioma" href="../" hreflang="es" lang="es" title="Ver en español">ES</a>
+    <div class="temas" role="group" aria-label="Color palette">
+      <button type="button" data-set="noche" aria-pressed="true" title="Night"><span class="sr">Dark version</span></button>
+      <button type="button" data-set="marfil" aria-pressed="false" title="Ivory"><span class="sr">Light version</span></button>
+    </div>
+    <button class="btn-menu" type="button" aria-expanded="false" aria-controls="menu"><span>Menu</span><i aria-hidden="true"><b></b><b></b></i></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="wrap">
+    <ol>
+      <li><a href="#inicio"><small>01</small>Home</a></li>
+      <li><a href="#historia"><small>02</small>My story</a></li>
+      <li><a href="#casos"><small>03</small>Projects</a></li>
+      <li><a href="#metodo"><small>04</small>How I work</a></li>
+      <li><a href="#contacto"><small>05</small>Let's talk</a></li>
+    </ol>
+    <p class="menu-pie">Buenos Aires · Data analysis, reporting and automation · <a href="../" hreflang="es" lang="es">Versión en español</a></p>
+  </div>
+</div>
+
+<main>
+
+<section class="hero" id="inicio">
+  <div class="eco" aria-hidden="true">
+    <div>DATA · STORIES · DATA · STORIES · DATA · STORIES · DATA · STORIES · DATA · STORIES ·</div>
+    <div>DECISIONS · DATA · DECISIONS · DATA · DECISIONS · DATA · DECISIONS · DATA · DECISIONS ·</div>
+  </div>
+
+  <div class="flotantes" aria-hidden="true">
+    <div class="obj o1" data-prof="28"><svg viewBox="0 0 160 140">
+      <defs><linearGradient id="g-barra" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--clay-hi)"/><stop offset="1" style="stop-color:var(--accent)"/></linearGradient></defs>
+      <rect x="8" y="104" width="144" height="28" rx="14" style="fill:var(--clay-lo)"/>
+      <rect x="22" y="62" width="30" height="52" rx="12" fill="url(#g-barra)"/>
+      <rect x="65" y="30" width="30" height="84" rx="12" fill="url(#g-barra)"/>
+      <rect x="108" y="8" width="30" height="106" rx="12" style="fill:var(--accent-2)"/>
+    </svg></div>
+    <div class="obj o2" data-prof="18"><svg viewBox="0 0 120 120">
+      <circle cx="60" cy="60" r="44" fill="none" style="stroke:var(--clay-lo)" stroke-width="26"/>
+      <circle cx="60" cy="60" r="44" fill="none" style="stroke:var(--accent)" stroke-width="26" stroke-dasharray="200 277" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+      <circle cx="60" cy="60" r="44" fill="none" style="stroke:var(--accent-2)" stroke-width="26" stroke-dasharray="46 277" stroke-dashoffset="-214" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+    </svg></div>
+    <div class="obj o3" data-prof="36"><svg viewBox="0 0 110 110">
+      <circle cx="46" cy="46" r="32" style="fill:var(--clay-hi);stroke:var(--accent)" stroke-width="12"/>
+      <path d="M70 70l26 26" style="stroke:var(--accent)" stroke-width="16" stroke-linecap="round"/>
+      <path d="M32 50l9-10 9 6 10-14" fill="none" style="stroke:var(--accent-2)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg></div>
+    <div class="obj o4" data-prof="12"><svg viewBox="0 0 100 92">
+      <path d="M14 6h72a10 10 0 0 1 10 10v40a10 10 0 0 1-10 10H40L20 86V66h-6A10 10 0 0 1 4 56V16A10 10 0 0 1 14 6z" style="fill:var(--clay-hi)"/>
+      <path d="M50 18l5 11 12 1-9 8 3 12-11-6-11 6 3-12-9-8 12-1z" style="fill:var(--accent-2)"/>
+    </svg></div>
+  </div>
+
+  <div class="wrap">
+    <div class="hero-txt">
+      <span class="kicker"><i></i>Portfolio · Data analysis and automation</span>
+      <h1 class="display">
+        <span class="linea"><span>Scattered data,</span></span>
+        <span class="linea"><span style="--dl:.12s"><em>clear stories.</em></span></span>
+      </h1>
+      <p class="bajada aparece" style="--dl:.3s">I'm <b>Milena Perez Benzo</b>. I bring together sources that don't talk to each other, find what matters, and present it so people can make decisions.</p>
+      <div class="acciones aparece" style="--dl:.45s">
+        <a class="btn lleno" href="#casos">See projects <span class="flecha" aria-hidden="true">→</span></a>
+        <a class="btn" href="https://www.linkedin.com/in/milena-jazmin-perez-benzo-93802a198" target="_blank" rel="noopener">LinkedIn <span class="flecha" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+  <a class="scroll-pista" href="#historia">Explore</a>
+</section>
+
+<section class="historia bloque" id="historia">
+  <div class="wrap">
+    <p class="etiqueta aparece">My story</p>
+    <h2 class="titulo display aparece">From IT technician to <em>data that drives decisions.</em></h2>
+    <p class="intro aparece">There's a common thread in my work: turning scattered information into clear knowledge so other people can make decisions.</p>
+
+    <div class="tiempo">
+      <div class="trazo" aria-hidden="true"></div>
+      <article class="hito aparece">
+        <span class="num">01</span>
+        <h3>The technical foundation</h3>
+        <p>I trained as an IT Technician in high school. Software has always been my interest and my hobby: I taught myself to build systems.</p>
+      </article>
+      <article class="hito aparece" style="--dl:.12s">
+        <span class="num">02</span>
+        <h3>From notebooks to data</h3>
+        <p>At my family's auto repair shop, I moved the bookkeeping from handwritten notebooks to a linked database, with a bot and a mobile web app.</p>
+      </article>
+      <article class="hito aparece" style="--dl:.24s">
+        <span class="num">03</span>
+        <h3>Going professional</h3>
+        <p>From July to November 2026 I worked as an analyst at an e-commerce company, where I built 6 reports, dashboards and tools used by other teams.</p>
+      </article>
+    </div>
+
+    <p class="cita-grande aparece">I study Social Communication at the University of Buenos Aires (UBA), on the research track. That's where I learned something that guides my work: <mark>a large volume of data says nothing without the judgment to question it and someone to tell it well.</mark></p>
+
+    <div class="numeros">
+      <div class="cifra aparece"><strong><span data-cuenta="6">6</span></strong><span>reports, dashboards and tools built for other teams in 2026</span></div>
+      <div class="cifra aparece" style="--dl:.08s"><strong>10 → <span data-cuenta="3">3</span> min</strong><span>per lookup, with 7 sources integrated into a single panel</span></div>
+      <div class="cifra aparece" style="--dl:.16s"><strong><span data-cuenta="95">95</span> %</strong><span>of the shop's historical records linked to their customer</span></div>
+      <div class="cifra aparece" style="--dl:.24s"><strong>+<span data-cuenta="60">60</span></strong><span>versions of the task manager, iterated with its users</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloque" id="casos">
+  <div class="wrap">
+    <p class="etiqueta aparece">Projects</p>
+    <h2 class="titulo display aparece">What I built, <em>and what I found.</em></h2>
+    <p class="intro aparece">Pick a project to see the details: the question, the data, the finding and the decision it enabled.</p>
+
+    <div class="destacados">
+      <article class="destacado aparece">
+        <div class="dest-txt">
+          <span class="tipo">Featured project · Analysis</span>
+          <h3>The alert that uncovered a shipping error</h3>
+          <p class="dest-dato"><strong>100% returns</strong><span>detected from one week to the next, with the root cause found and fixed</span></p>
+          <button class="btn lleno" type="button" data-caso="c-alerta">View project <span class="flecha" aria-hidden="true">→</span></button>
+        </div>
+        <div class="dest-img"><img src="../img/analisis-1-alerta.png" width="1280" height="640" loading="lazy" alt="Mockup of the weekly alert email, with one product flagged in red for returns."></div>
+      </article>
+      <article class="destacado invertido aparece">
+        <div class="dest-txt">
+          <span class="tipo">Featured project · Internal tool</span>
+          <h3>Task manager: all the team's work in one panel</h3>
+          <p class="dest-dato"><strong>10 → 3 min</strong><span>per lookup, with 7 sources integrated</span></p>
+          <button class="btn lleno" type="button" data-caso="c-gestor">View project <span class="flecha" aria-hidden="true">→</span></button>
+        </div>
+        <div class="dest-img"><img src="../img/gestor-1-mis-tareas.png" width="1280" height="800" loading="lazy" alt="Mockup of the task manager panel with cards grouped by category."></div>
+      </article>
+    </div>
+
+    <h3 class="indice-tit aparece">More projects</h3>
+    <ol class="indice">
+      <li class="aparece"><button class="fila" type="button" data-caso="c-tablero" data-img="../img/analisis-3-tablero.png"><span class="f-num">03</span><span class="f-tit">Quarterly team dashboard<small>Workload, turnaround times and collaboration, quarter over quarter</small></span><span class="f-tag">Analysis</span><span class="f-ir" aria-hidden="true">↗</span></button></li>
+      <li class="aparece"><button class="fila" type="button" data-caso="c-calidad" data-img="../img/analisis-2-calidad.png"><span class="f-num">04</span><span class="f-tit">AI-powered weekly quality report<small>KPIs plus a qualitative summary of testers' notes</small></span><span class="f-tag">Report</span><span class="f-ir" aria-hidden="true">↗</span></button></li>
+      <li class="aparece"><button class="fila" type="button" data-caso="c-auditoria" data-img="../img/auditoria-1-resumen.png"><span class="f-num">05</span><span class="f-tit">Web manual audit<small>Automated check of the published version against the approved one</small></span><span class="f-tag">Automation</span><span class="f-ir" aria-hidden="true">↗</span></button></li>
+      <li class="aparece"><button class="fila" type="button" data-caso="c-verificacion" data-img="../img/verificacion-1-flujo.png"><span class="f-num">06</span><span class="f-tit">AI listing verification<small>n8n and the Claude API check every requested change</small></span><span class="f-tag">Applied AI</span><span class="f-ir" aria-hidden="true">↗</span></button></li>
+      <li class="aparece"><button class="fila" type="button" data-caso="c-lumi" data-img="../img/lumi-1-papelitos.png"><span class="f-num">07</span><span class="f-tit">Lumi: running a repair shop<small>A Telegram bot as an inbox, plus linked data</small></span><span class="f-tag">Small-business system</span><span class="f-ir" aria-hidden="true">↗</span></button></li>
+      <li class="aparece"><button class="fila" type="button" data-caso="c-cerebro" data-img="../img/cerebro-1-obsidian.png"><span class="f-num">08</span><span class="f-tit">Digital second brain<small>My most complete personal system, end to end</small></span><span class="f-tag">Personal</span><span class="f-ir" aria-hidden="true">↗</span></button></li>
+      <li class="aparece"><button class="fila" type="button" data-caso="c-ddh" data-img="../img/ddh-pbi-0.png"><span class="f-num">09</span><span class="f-tit">Words vs. deeds: media and hate crimes<small>Power BI data analysis with public sources, 2018–2026</small></span><span class="f-tag">Power BI</span><span class="f-ir" aria-hidden="true">↗</span></button></li>
+    </ol>
+  </div>
+  <div class="vista-flotante" aria-hidden="true"><img alt="" width="1280" height="800"></div>
+</section>
+
+<section class="hallazgo bloque" id="hallazgo" aria-labelledby="t-hallazgo">
+  <div class="wrap">
+    <p class="etiqueta aparece">A finding, step by step</p>
+    <h2 class="titulo display aparece" id="t-hallazgo">When a number <em>spikes.</em></h2>
+    <p class="intro aparece">This is how the Monday alert works. It's a recreation of the real case with made-up data.</p>
+
+    <div class="escena">
+      <div class="tabla-viva aparece" id="tabla-viva">
+        <table>
+          <caption class="sr">Top sellers with returns, failures and customer ratings (made-up data)</caption>
+          <thead><tr><th>Product</th><th class="n">Units sold</th><th>Returns</th><th class="n">Rating</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Air fryer</td><td class="n">540</td><td><span class="barra" data-w="2"></span><span class="dev">2 %</span></td><td class="n">4.7 ★</td><td><span class="sello">OK</span></td></tr>
+            <tr><td>Robot vacuum</td><td class="n">488</td><td><span class="barra" data-w="3"></span><span class="dev">3 %</span></td><td class="n">4.5 ★</td><td><span class="sello">OK</span></td></tr>
+            <tr class="critico"><td><b>Premium product</b></td><td class="n">312</td><td><span class="barra" data-w="96"></span><span class="dev">96 %</span></td><td class="n">1.8 ★</td><td><span class="sello">Check now</span></td></tr>
+            <tr><td>Standing fan</td><td class="n">265</td><td><span class="barra" data-w="7"></span><span class="dev">7 %</span></td><td class="n">3.6 ★</td><td><span class="sello">Watch</span></td></tr>
+            <tr><td>Headphones</td><td class="n">231</td><td><span class="barra" data-w="4"></span><span class="dev">4 %</span></td><td class="n">3.9 ★</td><td><span class="sello">OK</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <ol class="relato-pasos" id="relato">
+          <li><b>The question</b>Which of our best-selling products have problems?</li>
+          <li><b>The join</b>Sales, returns, technical-service failures and reviews, using the agreed failure criteria.</li>
+          <li><b>The alarm</b>From one week to the next, a premium product started being returned in full.</li>
+          <li><b>The decision</b>An investigation revealed a shipping error: a different, cheaper model was being delivered. It was fixed.</li>
+        </ol>
+        <button class="btn btn-claro" type="button" id="repetir">Replay <span class="flecha" aria-hidden="true">↻</span></button>
+        <p class="nota" style="margin-top:18px">Today the alert is used to review products proactively.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloque" id="metodo">
+  <div class="wrap">
+    <p class="etiqueta aparece">How I work with data</p>
+    <h2 class="titulo display aparece">Five steps, <em>every time.</em></h2>
+    <div class="paneles aparece" id="paneles">
+      <button class="panel" type="button" aria-expanded="true"><span class="p-num">01</span><span class="p-tit">The question</span><span class="p-cuerpo"><h3>The question comes first.</h3><p>Before opening a spreadsheet, I make sure I understand who will read the result and what they need to decide.</p></span></button>
+      <button class="panel" type="button" aria-expanded="false"><span class="p-num">02</span><span class="p-tit">The join</span><span class="p-cuerpo"><h3>I cross-reference sources.</h3><p>The answer is almost never in a single table: it's in how several of them connect.</p></span></button>
+      <button class="panel" type="button" aria-expanded="false"><span class="p-num">03</span><span class="p-tit">The criteria</span><span class="p-cuerpo"><h3>I agree on criteria with the decision-maker.</h3><p>What counts as a failure, what's serious, what gets compared to what. Without agreed criteria, the number is useless.</p></span></button>
+      <button class="panel" type="button" aria-expanded="false"><span class="p-num">04</span><span class="p-tit">The story</span><span class="p-cuerpo"><h3>I tell it for whoever is reading.</h3><p>A tester, a manager and a category team need to see different things. The finding goes on top; the details are one click away.</p></span></button>
+      <button class="panel" type="button" aria-expanded="false"><span class="p-num">05</span><span class="p-tit">Automation</span><span class="p-cuerpo"><h3>I automate it.</h3><p>A report made once is a snapshot. One that builds itself every week is continuous monitoring, with less manual work and less cognitive load.</p></span></button>
+    </div>
+  </div>
+</section>
+
+<section class="bloque historia" id="persona">
+  <div class="wrap">
+    <p class="etiqueta aparece">What I'm like to work with</p>
+    <h2 class="titulo display aparece">Skills that amplify <em>the technical side.</em></h2>
+    <div class="rasgos">
+      <article class="rasgo aparece"><div class="ico" aria-hidden="true">✦</div><h3>Communication tailored to each audience</h3><p>Two years teaching technology to adults over 50 taught me that everyone connects with a message differently. I adapt language and format to whoever receives it.</p></article>
+      <article class="rasgo aparece" style="--dl:.08s"><div class="ico" aria-hidden="true">⚡</div><h3>Process optimization</h3><p>I spot the steps that cause delays or unnecessary effort and automate or remove them, cutting operational time and the team's cognitive load.</p></article>
+      <article class="rasgo aparece" style="--dl:.16s"><div class="ico" aria-hidden="true">◎</div><h3>Ownership and judgment</h3><p>I validate every deliverable. I use AI as a tool to boost my work; the judgment, the validation and the responsibility for the result are mine.</p></article>
+      <article class="rasgo aparece" style="--dl:.24s"><div class="ico" aria-hidden="true">❋</div><h3>Teamwork and continuous learning</h3><p>I build my tools together with the people who use them and refine them with their feedback. I'm always learning: right now I'm taking Power BI with Microsoft and professional English.</p></article>
+    </div>
+  </div>
+  <div class="cinta" aria-label="Tools I use">
+    <div>
+      <span>SQL · BigQuery</span><span>Python</span><span>Power BI</span><span>Google Sheets</span><span>Excel</span><span>Apps Script</span><span>n8n</span><span>Claude API</span><span>Gemini</span>
+      <span aria-hidden="true">SQL · BigQuery</span><span aria-hidden="true">Python</span><span aria-hidden="true">Power BI</span><span aria-hidden="true">Google Sheets</span><span aria-hidden="true">Excel</span><span aria-hidden="true">Apps Script</span><span aria-hidden="true">n8n</span><span aria-hidden="true">Claude API</span><span aria-hidden="true">Gemini</span>
+    </div>
+  </div>
+</section>
+
+<section class="bloque contacto" id="contacto">
+  <div class="wrap">
+    <p class="etiqueta aparece">Contact</p>
+    <h2 class="titulo display aparece">Let's talk?</h2>
+    <p class="intro aparece" style="margin-inline:auto">Social Communication (UBA, research track) · Google AI Fundamentals · currently taking Power BI with Microsoft and professional English.</p>
+    <a class="btn lleno aparece" href="https://www.linkedin.com/in/milena-jazmin-perez-benzo-93802a198" target="_blank" rel="noopener">Message me on LinkedIn <span class="flecha" aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Projects built for companies are shown without internal data: their screenshots and the animated table are mockups with made-up data. Screenshots keep their original Spanish interface.</p>
+  </div>
+</footer>
+
+<!-- ================= Project popups ================= -->
+
+<dialog class="caso" id="c-alerta" aria-labelledby="h-alerta">
+  <div class="d-cab"><span class="tipo">Analysis · E-commerce company · since Oct 2026</span><button class="d-btn ant" type="button" aria-label="Previous project">←</button><button class="d-btn sig" type="button" aria-label="Next project">→</button><button class="d-btn cerrar" type="button" aria-label="Close">✕</button></div>
+  <div class="d-cuerpo">
+    <h2 id="h-alerta">Weekly sales and failures alert</h2>
+    <p class="bajada">Every Monday it cross-references the sales ranking with returns, failures and what customers say, and flags which product to look at first.</p>
+    <div class="d-grilla">
+      <div><h4>The question</h4><p>Which of our best-selling products have problems, and which should be reviewed before the problem multiplies?</p></div>
+      <div><h4>The data</h4><p>Sales ranking, return rate, technical-service failure rate with its comments, and customer ratings and reviews on the marketplace.</p></div>
+    </div>
+    <ol class="flujo"><li>Sales, returns, technical service and reviews</li><li>Joined in BigQuery</li><li>Agreed failure criteria</li><li>Ranked by sales</li><li>Monday email</li></ol>
+    <div class="d-destacado">
+      <h4>What it found</h4>
+      <p>A premium product in the top sellers went, from one week to the next, to having every unit returned. The investigation revealed the cause: an order-picking error meant a different, cheaper model was being delivered instead of the one listed.</p>
+      <p>It also flagged listings with serious errors in their specifications, which were paused and corrected.</p>
+    </div>
+    <h4>The decision it enabled</h4>
+    <p>Finding and fixing the shipping error, starting from a number that spiked. Today the alert works as a trigger to proactively review the products with the most cases.</p>
+    <figure><img src="../img/analisis-1-alerta.png" width="1280" height="640" loading="lazy" alt="Weekly alert email with a table ranked by sales; one product appears in red with 96% returns and the comment 'A different model arrived'."><figcaption>Mockup with made-up data.</figcaption></figure>
+    <ul class="chips"><li>BigQuery</li><li>SQL</li><li>Apps Script</li><li>Google Sheets</li></ul>
+  </div>
+</dialog>
+
+<dialog class="caso" id="c-tablero" aria-labelledby="h-tablero">
+  <div class="d-cab"><span class="tipo">Dashboard · E-commerce company · completed Oct 2026</span><button class="d-btn ant" type="button" aria-label="Previous project">←</button><button class="d-btn sig" type="button" aria-label="Next project">→</button><button class="d-btn cerrar" type="button" aria-label="Close">✕</button></div>
+  <div class="d-cuerpo">
+    <h2 id="h-tablero">Quarterly team dashboard</h2>
+    <p class="bajada">Shows how a team performs quarter over quarter, built from tasks spread across spreadsheets that weren't connected.</p>
+    <div class="d-grilla">
+      <div><h4>The question</h4><p>How is the team doing? Who has the heaviest workload, where does work get stuck, and what changed since last quarter?</p></div>
+      <div><h4>The data</h4><p>The team's tasks, scattered across several spreadsheets. I merged them into one database and built a web dashboard where anyone can choose what to compare and export it to PDF to send by email.</p></div>
+    </div>
+    <div class="d-destacado">
+      <h4>What it found</h4>
+      <ul>
+        <li>An imbalance in time and workload between team members.</li>
+        <li>Duplicate inquiries: the same person was getting the same question several times.</li>
+        <li>Weak areas that need attention.</li>
+        <li>Collaboration between coworkers that previously wasn't recorded anywhere.</li>
+      </ul>
+    </div>
+    <h4>The decision it enabled</h4>
+    <p>Supervisors and coordinators use it to track the team, and management checks it when they need a specific number. Counting collaborations also made previously invisible work visible, and encourages teamwork.</p>
+    <figure><img src="../img/analisis-3-tablero.png" width="1280" height="580" loading="lazy" alt="Web dashboard comparing two quarters: closed cases, average time, collaborations and duplicate inquiries, with a per-person table."><figcaption>Mockup with made-up data and people.</figcaption></figure>
+    <ul class="chips"><li>Google Sheets</li><li>Apps Script (web)</li><li>PDF export</li></ul>
+  </div>
+</dialog>
+
+<dialog class="caso" id="c-calidad" aria-labelledby="h-calidad">
+  <div class="d-cab"><span class="tipo">Report · E-commerce company · since Oct 2026</span><button class="d-btn ant" type="button" aria-label="Previous project">←</button><button class="d-btn sig" type="button" aria-label="Next project">→</button><button class="d-btn cerrar" type="button" aria-label="Close">✕</button></div>
+  <div class="d-cuerpo">
+    <h2 id="h-calidad">AI-powered weekly quality report</h2>
+    <p class="bajada">Every Friday it combines the numbers from quality reviews with what the testers observed, summarized by AI.</p>
+    <div class="d-grilla">
+      <div><h4>Before</h4><p>It didn't exist: no one had an overall view of quality or week-by-week tracking.</p></div>
+      <div><h4>Now</h4><p>Products reviewed; approved, conditional and rejected; failures on the website, in manuals, critical ones and by supplier; and a qualitative analysis of the observations.</p></div>
+    </div>
+    <ol class="flujo"><li>QA reviews</li><li>KPIs</li><li>AI summary</li><li>Friday email</li></ol>
+    <h4>Why numbers and words</h4>
+    <p>A percentage tells you how much; the observations tell you why. AI summarizes what the testers wrote, and I define what gets measured and how it's presented. It goes to supervisors, coordinators, management and category teams.</p>
+    <p class="d-resultado">For the first time there's visibility and continuous tracking of quality, without anyone building the report by hand.</p>
+    <figure><img src="../img/analisis-2-calidad.png" width="1280" height="660" loading="lazy" alt="Weekly quality report email with KPIs, bars by failure type and by supplier, and an AI-generated qualitative summary."><figcaption>Mockup with made-up data.</figcaption></figure>
+    <ul class="chips"><li>Google Sheets</li><li>n8n</li><li>Claude API</li></ul>
+  </div>
+</dialog>
+
+<dialog class="caso" id="c-lumi" aria-labelledby="h-lumi">
+  <div class="d-cab"><span class="tipo">System · My family's auto repair shop</span><button class="d-btn ant" type="button" aria-label="Previous project">←</button><button class="d-btn sig" type="button" aria-label="Next project">→</button><button class="d-btn cerrar" type="button" aria-label="Close">✕</button></div>
+  <div class="d-cuerpo">
+    <h2 id="h-lumi">Lumi: the shop, from notebooks to data</h2>
+    <p class="bajada">The team sends everything to a Telegram bot and it ends up organized in a spreadsheet, with a simple mobile web app.</p>
+    <h4>The problem</h4>
+    <p>Jobs and appointments were arranged over WhatsApp, and notes ended up on scraps of paper and in notebooks. An earlier attempt with Notion was abandoned because data entry was too slow.</p>
+    <h4>What I built</h4>
+    <ol class="flujo"><li>Voice note, photo or text</li><li>Telegram bot</li><li>Spreadsheet inbox</li><li>Automatic transcription</li><li>Mobile web app</li></ol>
+    <ul>
+      <li>Before writing any code, five interviews with the main user. The rule that came out of them: taking a note has to be easier than grabbing a scrap of paper.</li>
+      <li>I migrated the historical records and linked each job to its customer. A Python script reads the QR code on invoices and suggests which job each one belongs to; a person confirms anything uncertain.</li>
+      <li>Mobile web app: to-dos, notes, balance, and ready-made customer messages that are always sent by a person.</li>
+    </ul>
+    <p class="d-resultado">95% of historical jobs were linked to their customer (278 of 293) and 92% of invoices to their job (98 of 106). It's used by the shop's administrative partner and me.</p>
+    <div class="fotos-tel">
+      <img src="../img/lumi-3-bot.png" width="700" height="916" loading="lazy" alt="Chat with the Lumi bot: the team sends a voice note, a photo and a text.">
+      <img src="../img/lumi-1-papelitos.png" width="700" height="916" loading="lazy" alt="Lumi screen with today's and this week's to-dos.">
+      <img src="../img/lumi-2-balance.png" width="700" height="916" loading="lazy" alt="Monthly balance by account in Lumi.">
+    </div>
+    <ul class="chips"><li>Telegram</li><li>Apps Script</li><li>Google Sheets</li><li>Python</li></ul>
+  </div>
+</dialog>
+
+<dialog class="caso" id="c-gestor" aria-labelledby="h-gestor">
+  <div class="d-cab"><span class="tipo">Internal tool · E-commerce company · since Jul 2026</span><button class="d-btn ant" type="button" aria-label="Previous project">←</button><button class="d-btn sig" type="button" aria-label="Next project">→</button><button class="d-btn cerrar" type="button" aria-label="Close">✕</button></div>
+  <div class="d-cuerpo">
+    <h2 id="h-gestor">Technical team task manager</h2>
+    <p class="bajada">A Chrome side panel that brings all of the team's work together: tasks, product information, emails, time and notes. Designed 100% around their needs and the friction in their day-to-day work.</p>
+    <h4>The problem</h4>
+    <p>Product information was spread across 7 sources built by other teams, which couldn't be modified. Each lookup took about 10 minutes, and the only way to know the status of a task was to ask.</p>
+    <div class="d-grilla">
+      <div>
+        <h4>Information one click away</h4>
+        <ul>
+          <li>From each task, direct access to tickets, reports, quality checks, samples, supplier data and the web listing.</li>
+          <li>Emails automatically linked to their task.</li>
+          <li>A web clipper: any page can be saved to an existing task or create a new one.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Natural-language management</h4>
+        <ul>
+          <li>Tasks, statuses, comments, subtasks, collaborations and exclusions, written the way you talk, with @mentions for each person.</li>
+          <li>Time tracking per task.</li>
+          <li>Notes always at hand, at the bottom of the panel.</li>
+          <li>Chrome pop-up notifications, configurable by each person.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-destacado">
+      <h4>Visibility for supervisors</h4>
+      <p>Supervisors can see active to-dos and each person's workload. There's no longer any need to ask how each task is going.</p>
+    </div>
+    <h4>How I built it</h4>
+    <p>On top of systems that couldn't be changed: each source is imported separately and, if one fails, the rest keep working and the panel shows a warning. I refined it with the team's feedback over 60+ versions.</p>
+    <p class="d-resultado">Each lookup went from 10 minutes to 3. A 4-person team uses it every day.</p>
+    <figure><img src="../img/gestor-1-mis-tareas.png" width="1280" height="800" loading="lazy" alt="Task manager panel with cards by category and a new task written in natural language."><figcaption>Tasks are written the way you talk. Mockup with made-up data.</figcaption></figure>
+    <figure><img src="../img/gestor-2-vinculos.png" width="1280" height="800" loading="lazy" alt="Task card with the links menu that brings together ticket, checks, samples, email and product data."><figcaption>Everything about a product, one click away.</figcaption></figure>
+    <figure><img src="../img/gestor-3-equipo.png" width="1280" height="800" loading="lazy" alt="Team board with one column per person and their pending tasks."><figcaption>Each person's workload, visible to supervisors.</figcaption></figure>
+    <ul class="chips"><li>Chrome extension</li><li>JavaScript</li><li>Apps Script</li><li>Google Sheets</li><li>BigQuery</li><li>Gmail and Calendar</li></ul>
+  </div>
+</dialog>
+
+<dialog class="caso" id="c-auditoria" aria-labelledby="h-auditoria">
+  <div class="d-cab"><span class="tipo">Automation · E-commerce company</span><button class="d-btn ant" type="button" aria-label="Previous project">←</button><button class="d-btn sig" type="button" aria-label="Next project">→</button><button class="d-btn cerrar" type="button" aria-label="Close">✕</button></div>
+  <div class="d-cuerpo">
+    <h2 id="h-auditoria">Web manual audit</h2>
+    <p class="bajada">Automatically checks whether the manuals published on the website are the latest approved version, and leaves only what's necessary for human review.</p>
+    <ol class="flujo"><li>Published manual</li><li>File fingerprint</li><li>Comparison with Drive</li><li>OK · NOT OK · Review</li></ol>
+    <ul>
+      <li>Cross-checks the published manuals against the ones in Drive; if they're not identical, it compares them page by page and classifies each difference by severity.</li>
+      <li>A rule agreed with the user: never a false OK. Anything uncertain goes to human review.</li>
+      <li>Runs on its own with a scheduled trigger.</li>
+    </ul>
+    <p class="d-resultado">Used by two teams, including the catalog team, which is responsible for changes on the website.</p>
+    <figure><img src="../img/auditoria-1-resumen.png" width="1280" height="800" loading="lazy" alt="Audit panel showing the percentage of manuals that match and the ones that need fixing."><figcaption>Mockup with made-up data.</figcaption></figure>
+    <ul class="chips"><li>BigQuery</li><li>Python</li><li>Apps Script</li><li>Google Drive</li></ul>
+  </div>
+</dialog>
+
+<dialog class="caso" id="c-verificacion" aria-labelledby="h-verificacion">
+  <div class="d-cab"><span class="tipo">Applied AI · E-commerce company</span><button class="d-btn ant" type="button" aria-label="Previous project">←</button><button class="d-btn sig" type="button" aria-label="Next project">→</button><button class="d-btn cerrar" type="button" aria-label="Close">✕</button></div>
+  <div class="d-cuerpo">
+    <h2 id="h-verificacion">AI listing verification</h2>
+    <p class="bajada">An n8n workflow that uses the Claude API to check whether the changes requested on a product listing were actually made.</p>
+    <ol class="flujo"><li>Request spreadsheet</li><li>Published page</li><li>Clean text</li><li>Claude verifies</li><li>Results spreadsheet</li></ol>
+    <ul>
+      <li>Skips what's already been reviewed and keeps only the visible text: lower cost and better answers.</li>
+      <li>Claude replies in a fixed format that the workflow parses and loads automatically.</li>
+      <li>The workflow never changes anything on the website by itself: the final call stays with the team.</li>
+    </ul>
+    <figure><img src="../img/verificacion-1-flujo.png" width="1280" height="800" loading="lazy" alt="n8n workflow that reads requests, downloads each listing, cleans it, verifies it with Claude and loads the verdict."><figcaption>Mockup with made-up data.</figcaption></figure>
+    <ul class="chips"><li>n8n</li><li>Claude API</li><li>Google Sheets</li></ul>
+  </div>
+</dialog>
+
+<dialog class="caso" id="c-cerebro" aria-labelledby="h-cerebro">
+  <div class="d-cab"><span class="tipo">Personal project</span><button class="d-btn ant" type="button" aria-label="Previous project">←</button><button class="d-btn sig" type="button" aria-label="Next project">→</button><button class="d-btn cerrar" type="button" aria-label="Close">✕</button></div>
+  <div class="d-cuerpo">
+    <h2 id="h-cerebro">Digital second brain</h2>
+    <p class="bajada">My most complete personal system: a bot collects notes, photos and voice notes, and everything gets organized and linked automatically.</p>
+    <ul>
+      <li>First version in Notion: a bot as the inbox and sections that link themselves.</li>
+      <li>Now migrating to Obsidian, synced between PC and phone, with local AI so my notes never leave my computer.</li>
+    </ul>
+    <p class="d-resultado">This is where the bot-as-inbox idea came from, which I later used in Lumi.</p>
+    <figure><img src="../img/cerebro-1-obsidian.png" width="1280" height="800" loading="lazy" alt="Obsidian vault with folders by area and linked notes."><figcaption>Screenshot with sample content.</figcaption></figure>
+    <ul class="chips"><li>Notion</li><li>Obsidian</li><li>Telegram</li><li>n8n</li><li>Local AI</li></ul>
+  </div>
+</dialog>
+
+<dialog class="caso" id="c-ddh" aria-labelledby="h-ddh">
+  <div class="d-cab"><span class="tipo">Data analysis · Personal project</span><button class="d-btn ant" type="button" aria-label="Previous project">←</button><button class="d-btn sig" type="button" aria-label="Next project">→</button><button class="d-btn cerrar" type="button" aria-label="Close">✕</button></div>
+  <div class="d-cuerpo">
+    <p class="aviso" role="note"><span aria-hidden="true">⚠</span><span><b>Content warning:</b> this project deals with violence against trans and travesti people. It uses only aggregated data, with no names, images or videos of victims.</span></p>
+    <h2 id="h-ddh">Words vs. deeds. <em>What are the media up to?</em></h2>
+    <p class="bajada">A dashboard that cross-references recorded hate crimes with what the media published and what people searched on Google, from 2018 to 2026.</p>
+    <figure><a class="ampliar" href="../img/ddh-pbi-0.png" target="_blank" rel="noopener"><img src="../img/ddh-pbi-0.png" width="1316" height="740" loading="lazy" alt="Dashboard cover: the title 'Calendar visibility', the big idea and the number 160 in red, with a content warning at the bottom."></a><figcaption>Power BI dashboard (in Spanish).</figcaption></figure>
+    <h4>The question</h4>
+    <p>How much attention do Argentine media give to hate crimes against trans people, and when?</p>
+    <div class="d-destacado gran-idea">
+      <h4>The big idea</h4>
+      <p>In 2025, the record year for hate crimes against trans people, each case got less than half the attention it did in 2022. And in coverage of the 2026 Palermo attack, more than eight out of ten articles didn't call it a hate crime.</p>
+    </div>
+    <h4>Findings</h4>
+    <ol class="ddh-hallazgos">
+      <li>
+        <p><strong>160</strong>hate crimes against trans people in 2025, 68&nbsp;% more than in 2024 (95). That's 7 out of 10 LGBT+ hate crimes that year.</p>
+        <figure><a class="ampliar" href="../img/ddh-pbi-1.png" target="_blank" rel="noopener"><img src="../img/ddh-pbi-1.png" width="1316" height="740" loading="lazy" alt="Columns of hate crimes per year, 2018 to 2025: in 2025 cases against trans people rise from 95 to 160, up 68%."></a><figcaption>Power BI dashboard (in Spanish).</figcaption></figure>
+      </li>
+      <li>
+        <p><strong>−55&nbsp;%</strong>attention per case between 2022 and 2025: cases rose 44&nbsp;% while articles per 10,000 fell 36&nbsp;%. 2022 cases are estimated from published percentages.</p>
+        <figure><a class="ampliar" href="../img/ddh-pbi-2.png" target="_blank" rel="noopener"><img src="../img/ddh-pbi-2.png" width="1316" height="740" loading="lazy" alt="Columns of media attention per 100 cases: 3.6 in 2022 in gold and 1.6 in 2025 in red, a 55% drop."></a><figcaption>Power BI dashboard (in Spanish).</figcaption></figure>
+      </li>
+      <li>
+        <p><strong>×21</strong>more articles on May 17, the International Day Against Homophobia, Transphobia and Biphobia, than on a typical day (the median). It was the day with the most articles of the year in 6 of the last 10 years: the news agenda follows the calendar.</p>
+        <figure><a class="ampliar" href="../img/ddh-pbi-3.png" target="_blank" rel="noopener"><img src="../img/ddh-pbi-3.png" width="1316" height="740" loading="lazy" alt="Calendar of articles per day of the year, with May 17 as the most prominent day, and columns of articles published on that day each year."></a><figcaption>Power BI dashboard (in Spanish).</figcaption></figure>
+      </li>
+      <li>
+        <p><strong>17&nbsp;%</strong>of articles about the attack in the Palermo Woods (2026) called it a hate crime: 38 of 223, as of 11/4/2026. More articles mentioned sex work or the red-light zone (62).</p>
+        <figure><a class="ampliar" href="../img/ddh-pbi-5.png" target="_blank" rel="noopener"><img src="../img/ddh-pbi-5.png" width="1316" height="740" loading="lazy" alt="Horizontal bars with the percentage of articles that name hate in each case, labeled by place and year; Palermo 2026 in red at 17%."></a><figcaption>Power BI dashboard (in Spanish).</figcaption></figure>
+      </li>
+    </ol>
+    <h4>Method</h4>
+    <ul>
+      <li>Three public sources: the National Observatory of LGBT+ Hate Crimes (cases), Media Cloud (national media articles) and Google Trends (searches). Amid the blackout of official data, the case record comes from civil society.</li>
+      <li>Validated query: before measuring, I read a sample of headlines and dropped terms that pulled in articles on other topics.</li>
+      <li>Normalized per 10,000 published articles, because the size of the media collection changes from year to year.</li>
+      <li>Cross-checked against the Supreme Court's records: the courts recognize as travesticide or transfemicide 51&nbsp;% of the murders of trans women and travestis recorded by the Observatory (37 of 73).</li>
+    </ul>
+    <h4>Stack</h4>
+    <p>Power BI (star schema with a calendar table, Power Query and DAX), Python for downloading and cleaning the data, and an HTML mockup of the dashboard designed beforehand.</p>
+    <ul class="chips"><li>Power BI</li><li>Power Query</li><li>DAX</li><li>Python</li><li>Media Cloud</li><li>Google Trends</li></ul>
+    <div class="d-acciones">
+      <a class="btn lleno" href="https://github.com/foliolenah/del-dicho-al-hecho" target="_blank" rel="noopener">Explore the project <span class="flecha" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</dialog>
+
+<script src="../app.js"></script>
+</body>
+</html>
